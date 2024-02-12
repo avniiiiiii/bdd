@@ -1,0 +1,100 @@
+body {
+  font-family: cursive;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.head {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+p {
+  font-size: 4rem;
+}
+@keyframes glitter {
+  0% {
+    color: #d76a03;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+  }
+  50% {
+    color: goldenrod;
+    text-shadow: 0 0 20px rgba(255, 215, 0, 0.8),
+      0 0 30px rgba(255, 215, 0, 0.8), 0 0 40px rgba(255, 215, 0, 0.8),
+      0 0 50px rgba(255, 215, 0, 0.8);
+  }
+  100% {
+    color: #d76a03;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+  }
+}
+.whole {
+  height: 90vh;
+}
+.head h1 {
+  font-size: 5rem;
+  animation: glitter 1.5s infinite alternate;
+}
+
+main {
+  text-align: center;
+}
+
+
+.animation-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+}
+
+footer {
+  text-align: center;
+  margin-top: 20px;
+}
+.container {
+  display: flex;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.textarvind {
+  flex: 1;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.text {
+  text-align: left;
+}
+
+#saale {
+  font-size: 30px;
+  color: black;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.image-container {
+  margin-left: 20px; /* Add a margin between text and image */
+}
+
+#arvind {
+  border-radius: 50%;
+  object-fit: cover;
+  width: 200px; /* Adjust image width as needed */
+  height: 200px; /* Adjust image height as needed */
+}
+
+/* Media Queries */
+@media only screen and (max-width: 600px) {
+  .container {
+    padding: 10px;
+  }
+}
